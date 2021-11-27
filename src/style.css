@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+nav{
+    opacity: 75%;
+}
+
+.banner-text{
+    color: rgb(248, 247, 244); 
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgba(0, 0, 0, 0.5);
+    margin-left: 23px;
+}
+/* Banner area  01*/
+.container-navbar{   
+    width: 100%;
+    height: 350px;
+    padding: auto;
+    margin-bottom: 50px;
+    background-image: url(img/banners/01_inicio.jpg);
+    background-size: cover;
+    background-position: center, center;
+}
+
+
+.container-navbar-boca{
+    width: 100%;
+    height: 350px;
+    padding: auto;
+    margin-bottom: 50px;
+    background-image: url(img/banners/02_boca.jpg);
+    background-size: cover;
+    background-position: center, center;
+}
+
+.container-navbar-foraneos{
+    width: 100%;
+    height: 350px;
+    padding: auto;
+    margin-bottom: 50px;
+    background-image: url(img/banners/09_foraneos.jpg);
+    background-size: cover;
+    background-position: center, center;
+}
+
+
+.container-navbar-medellin{
+    width: 100%;
+    height: 350px;
+    padding: auto;
+    margin-bottom: 50px;
+    background-image: url(img/banners/04_medellin.jpg);
+    background-size: cover;
+    background-position: center, center;
+}
+
+.container-navbar-riviera{
+    width: 100%;
+    height: 350px;
+    padding: auto;
+    margin-bottom: 50px;
+    background-image: url(img/banners/05_riviera.jpg);
+    background-size: cover;
+    background-position: center, center;
+}
+
+
+.container-navbar-tips{
+    width: 100%;
+    height: 350px;
+    padding: auto;
+    margin-bottom: 50px;
+    background-image: url(img/banners/10_tips.jpeg);
+    background-size: cover;
+    background-position: center, center;
+}
+
+.container-navbar-veracruz{
+    width: 100%;
+    height: 350px;
+    padding: auto;
+    margin-bottom: 50px;
+    background-image: url(img/banners/03_veracruz.jpg);
+    background-size: cover;
+    background-position: center, center;
+}
+
+.container-navbar-comprar{
+    width: 100%;
+    height: 350px;
+    padding: auto;
+    margin-bottom: 50px;
+    background-image: url(img/infonavit/comprar.jpg);
+    background-size: cover;
+    background-position: center, center;
+}
+
+.container-navbar-construir{
+    width: 100%;
+    height: 350px;
+    padding: auto;
+    margin-bottom: 50px;
+    background-image: url(img/infonavit/construir.jpg);
+    background-size: cover;
+    background-position: center, center;
+}
+
+.container-navbar-remodelar{
+    width: 100%;
+    height: 350px;
+    padding: auto;
+    margin-bottom: 50px;
+    background-image: url(img/infonavit/remodelar.jpg);
+    background-size: cover;
+    background-position: center, center;
+}
+
+/* Cards area */
+
+
+.menu-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.menu-cards .card{
+    border-radius: 20px;
+    box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+}
+
+.menu-cards .card a{
+    color: rgb(104, 64, 2);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.menu-cards .card a:hover{
+    font-size: 25px;
+    transition: .7s;
+}
+.menu-cards .card i{
+    margin-right: 30px;
+    color: black;
+}
+
+.card-body{
+    background-color: rgb(248, 251, 252);
+}
+
+
+/* Footer */
+.container-footer{
+    background: rgb(0, 91, 143);
+
+}
+.container-footer a{ 
+    color: #fff;
+    text-decoration: none;
+}
+.container-footer a i{
+    color: #91BEC2;
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+    .banner-text{
+        top: 20%;
+        left: 7%;
+    }
+    .menu-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media (max-width: 500px){
+    .menu-cards{
+        grid-template-columns: 1fr;
+    }
+}
